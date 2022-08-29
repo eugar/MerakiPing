@@ -11,7 +11,7 @@ Recently Cisco has been having issues with its cloud-based dashboard, Meraki. Th
 There is an edge case where the DHCP server could hand out the AP's IP address to another device, leaving the LAN IP for the AP incorrect, resulting in a false-positive ping. This issue can be addressed by comparing the device's mac to the AP's mac to verify they are the same. This wasn't implemented since, in our environment, those APs would retain those IPs for 24 hours, and we would notice the issue within that time frame.
 
 
-I created a batch file (not in this repo) that can be used by coworkers running a Windows OS. The batch file reaches out to a server that hosts the script and executes it.
+I created a batch file (not in this repo) that makes it easier to access for coworkers running a Windows OS. The batch file reaches out to a server that hosts the script and executes it.
 
 ---
 
